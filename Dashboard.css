@@ -32,6 +32,20 @@
     text-decoration: underline;
     color: #fff;
     display: inline;
-    font-size: 2em;
+    font-size: 3em;
     margin:4px;
+    padding-left: 10px;
+}
+
+Body {
+    background-color: #0d47a1;
+}
+
+.Navbar-container button:last-child {
+    border:1px solid white;
+    gap:400px;
+}
+
+.Navbar-container button:last-child:hover{
+    background-color: red;
 }
