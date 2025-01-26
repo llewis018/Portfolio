@@ -38,6 +38,7 @@ body {
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
+    text-decoration: underline;
 }
 
 .login-container form {
