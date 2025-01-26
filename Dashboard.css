@@ -44,6 +44,7 @@ Body {
 .Navbar-container button:last-child {
     border:1px solid white;
     gap:400px;
+    margin-left: auto;
 }
 
 .Navbar-container button:last-child:hover{
