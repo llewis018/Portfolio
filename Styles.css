@@ -67,3 +67,14 @@ body {
 .login-container button:hover {
     background-color: #3700b3;
 }
+
+.login-container a {
+    text-decoration: none;
+    color: #6200ea;
+    font-size: 0.9em;
+    transform: color 0.3s;
+}
+
+.login-container a:hover {
+    
+}
