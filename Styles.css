@@ -1,29 +1,42 @@
-.login-container {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.9); /* Sets background colour to a white */
-    border-radius: 12px; /* Curves the edge of the border*/
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /*Applies a box four pixelswide and offset by 10 pixels */
-    padding: 40px; /*Adds 40 pixels of padding within the container on all sides*/
-    text-align: center;
-    max-width: 400px; /*Creates a maximum width of 400px to ensure it doesnt become too big */
-    position: relative;
-    z-index: 10; /* assigns as higher stack order */
-    margin:auto /* Centers the container within the div element */
-}
-
 body {
-    margin-top: 0px;
-    font-family:'Roboto', sans-serif;
-    background-color: #0d47a1;
-    overflow: hidden;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
     height: 100vh;
-    position: relative;
     color: #fff;
 }
 
+.image-container {
+    flex: 1;
+    background: url('https://images.squarespace-cdn.com/content/v1/5627572ee4b01fbf93c7d8bb/1631650854838-62P9O74E8NOXSAPWJ88H/A+girl+in+a+bookstore+%7C+Moody+portrait+photography+%7C+The+last+bookstore%2C+Los+Angeles%2C+CA+%7C+Tristan+Zhou+(%40trystane)') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    border-right: 10px #fff;
+}
+
+.form-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d47a1;
+    overflow: hidden;
+    position: relative;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
 .login-container h1 {
+    font-size: 2rem;
     color: #333;
-    font-size: 2em;
     margin-bottom: 20px;
 }
 
@@ -38,7 +51,7 @@ body {
     align-items: center;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 5px 10px
+    padding: 5px 10px;
 }
 
 .input-group i {
@@ -49,13 +62,13 @@ body {
 .input-group input {
     border: none;
     outline: none;
-    font-size: 1em;
+    font-size: 1rem;
     flex: 1;
 }
 
 .login-container button {
     padding: 10px;
-    font-size: 1em;
+    font-size: 1rem;
     background-color: #6200ea;
     color: #fff;
     border: none;
@@ -71,14 +84,13 @@ body {
 .login-container a {
     text-decoration: none;
     color: #6200ea;
-    font-size: 0.9em;
-    transform: color 0.3s;
+    font-size: 0.9rem;
+    transition: color 0.3s;
 }
 
 .login-container a:hover {
-    color:  #3700b3;
+    color: #3700b3;
 }
-
 /*Below is the CSS animation keyframes for the bubble effect*/
 
 @keyframes bubble {
@@ -99,10 +111,41 @@ body {
 
 .bubble {
     position: absolute;
+    bottom: -20px;
     width: 80px;
     height: 80px;
     background: rgb(255, 255, 255, 0.3);
     border-radius:50%;
     animation: bubble 10s infinite ease-in-out;
     opacity: 0%;
+}
+
+.bubble:nth-child(1) {
+    left: 10%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(2) {
+    left: 30%;
+    animation-duration: 8s;
+    animation-delay: 4s;
+}
+
+.bubble:nth-child(3) {
+    left: 50%;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(4) {
+    left: 70%;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(5) {
+    left: 90%;
+    animation-duration: 9s;
+    animation-delay: 5s;
 }
