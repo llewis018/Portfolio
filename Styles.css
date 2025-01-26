@@ -78,3 +78,31 @@ body {
 .login-container a:hover {
     color:  #3700b3;
 }
+
+/*Below is the CSS animation keyframes for the bubble effect*/
+
+@keyframes bubble {
+    0% {
+        transform: translateY(100%) scale(0.5);
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(-200%) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.bubble {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgb(255, 255, 255, 0.3);
+    border-radius:50%;
+    animation: bubble 10s infinite ease-in-out;
+    opacity: 0%;
+}
