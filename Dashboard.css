@@ -1,0 +1,56 @@
+.container {
+    display: flex; /* Puts all items in the nav bar into a flexbox */
+    justify-content: space-between; /*Pushes the left div and right div to opposite ends of the screen */
+    align-items: center; /* aligns the two divs on the x axis */
+    height: 5vh; /* Sets the hight of the navbar container NOT the two div elements */
+    padding: 0px 20px; /* No padding vertically but 20 horizontally */
+    /* Here onward is eastic */
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 20px black;
+    border-radius: 8px;
+}
+
+.buttons-left {
+    display: flex; /* Places the left elements in a flexbox turning them horizontal */
+    align-items: center; /* Aligns all the items within the left div centrally */
+    gap:15px; /*Adds 15 pixels of space between the flexbox elements */
+    height: 5vh; /* Sets the hight of the navbar container NOT the two div elements */
+    text-decoration: none;
+}
+
+.buttons-left a {
+    text-decoration: none;
+    font-size: 2em; 
+    border: 2px solid black;
+}
+
+.buttons-right {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: #0d47a1;
+}
+
+.Logout {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+
+.content {
+    height: 50vh;
+    width: 50%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.content-container {
+    display: flex;
+    gap: 15px;
+}
